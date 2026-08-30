@@ -17,6 +17,26 @@ A simple C implementation of a singly linked list with basic operations such as 
 - `List.c` - implementation of the linked list operations
 - `main.c` - sample usage of the linked list
 
+## Linked List Structure
+Each node stores one integer value and a pointer to the next node:
+
+```text
++-------------------+
+|    struct node    |
+|-------------------|
+| int data          |
+| struct node *next |
++-------------------+
+         |
+         v
+      head --> +--------+     +--------+     +--------+     NULL
+               | data:10| --> | data:20| --> | data:30| -->
+               | next   |     | next   |     | next   | 
+               +--------+     +--------+     +--------+
+```
+
+This pattern matches the implementation in `List.c`, where each node points to the next node and operations like insert/delete update these links.
+
 ## Build and Run
 Compile and run the program using:
 
