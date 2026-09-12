@@ -15,6 +15,7 @@ int main() {
 
     deleteAtPosition(&head, 0);
     displayList(head);
+    deleteList(&head);
 
     return 0;
 }

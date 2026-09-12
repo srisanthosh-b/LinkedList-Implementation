@@ -141,3 +141,18 @@ void displayList(Node *head) {
     printf("NULL\n");
 }
 
+void deleteList(Node **head){
+    if(*head == NULL){
+        printf("List is empty\n");
+        return;
+    }
+    Node *cur = *head;
+    while(cur != NULL){
+        Node *temp = cur;
+        cur = cur->next;
+        free(temp);
+    }
+    *head = NULL;
+    printf("List deleted successfully\n");
+    return;
+}

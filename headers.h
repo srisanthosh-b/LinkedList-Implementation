@@ -17,5 +17,6 @@ void deleteAtBeginning(Node **);
 void deleteAtEnd(Node **);
 void deleteAtPosition(Node **, int );
 void displayList(Node *);
+void deleteList(Node **);
 
 #endif
